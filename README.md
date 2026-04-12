@@ -11,7 +11,7 @@ evalkit lets you benchmark language models against curated test suites, cache AP
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/evalkit.git
+git clone https://github.com/rutul31/LLM_evalkit.git
 cd evalkit
 python -m venv .venv
 source .venv/bin/activate     # macOS / Linux
