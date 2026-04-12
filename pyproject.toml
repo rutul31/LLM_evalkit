@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evalkit"
+version = "0.1.0"
+description = "Open-source LLM evaluation and red-teaming framework"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Rutul Patel"},
+]
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "sqlalchemy>=2.0.0",
+    "openai>=1.0.0",
+    "datasets>=2.14.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+evalkit = "evalkit.cli.main:app"
+
+[tool.setuptools.packages.find]
+include = ["evalkit*"]
